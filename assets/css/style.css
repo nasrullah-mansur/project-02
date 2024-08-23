@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --heading-font: "Open Sans", sans-serif;
+    --body-font: "Nunito", sans-serif;
+    --primary-color: #8454F5;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-custom,
+.btn-custom:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 6fr 3fr 3fr;
+    grid-gap: 10px;
+} */

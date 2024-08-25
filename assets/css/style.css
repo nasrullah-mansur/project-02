@@ -4,6 +4,7 @@
     --heading-font: "Open Sans", sans-serif;
     --body-font: "Nunito", sans-serif;
     --primary-color: #8454F5;
+    --secondary-color: #FFC556;
 }
 
 body {
@@ -14,17 +15,190 @@ a {
     text-decoration: none;
 }
 
+:focus {
+    outline: none;
+}
+
 .btn-custom,
 .btn-custom:hover {
     background-color: var(--primary-color);
     color: #fff;
 }
 
+/* Banner */
+.banner {
+    h1 {
+        font-size: 60px;
+        font-family: var(--heading-font);
+        font-weight: 700;
 
-/* .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-columns: 25% 50% 25%;
-    grid-template-columns: 6fr 3fr 3fr;
-    grid-gap: 10px;
-} */
+        /* Responsive for Medium Devices */
+        @media (max-width: 991.98px) {
+            margin-top: 50px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 50px;
+        padding-left: 20px;
+        border-left: 5px solid var(--secondary-color);
+    }
+
+
+    form {
+        background-color: rgba(132, 84, 245, 0.15);
+        border-radius: 10px;
+        max-width: 520px;
+        margin-top: 50px;
+
+        input {
+            height: 65px;
+            background-color: transparent;
+            padding: 0 20px;
+        }
+
+        button {
+            width: 160px;
+            margin-right: 10px;
+            height: 45px;
+        }
+    }
+}
+
+
+/* Services */
+.services {
+    padding: 120px 0;
+    background-color: #FFFCF7;
+
+    .section-heading {
+        margin-bottom: 80px;
+
+        h2 {
+            font-size: 60px;
+            font-family: var(--heading-font);
+            font-weight: 700;
+            padding: 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            padding-left: 20px;
+            border-left: 5px solid var(--secondary-color);
+        }
+    }
+
+    .service-item {
+        padding: 25px;
+        border-radius: 25px;
+        background-color: #fff;
+        border: 1px solid rgba(132, 84, 245, 0.4);
+
+        .item-title {
+            
+            i {
+                width: 60px;
+                height: 60px;
+                border-radius: 15px;
+                background-color: rgba(254, 196, 95, 0.15);
+                color: #FEC35F;
+                font-size: 34px;
+            }
+
+            h4 {
+                font-size: 28px;
+                font-weight: 700;
+                padding-left: 15px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 16px;
+            margin-bottom: 28px;
+        }
+
+        a {
+            font-size: 20px;
+            font-weight: 600;
+            color: #29313D;
+        }
+
+        &:hover {
+            background-color: #FEC35F;
+
+            .item-title {
+                i {
+                    background-color: rgba(252, 252, 254, 0.15);
+                    color: #fff;
+                }
+
+                h4 {
+                    color: #fff;
+                }
+            }
+
+            p,
+            a {
+                color: #fff;
+            }
+        }
+
+
+        /* color-beguni */
+
+        &.color-beguni {
+            .item-title {
+                
+                i {
+                    background-color: rgba(132, 84, 245, 0.15);
+                    color: #8454F5;
+                }
+            }
+
+            &:hover {
+                background-color: #8454F5;
+
+                .item-title {
+                    i {
+                        background-color: rgba(252, 252, 254, 0.15);
+                        color: #fff;
+                    }
+
+                }
+            }
+        }
+
+        /* Color-green */
+        &.color-green {
+            .item-title {
+                
+                i {
+                    background-color: rgba(117, 186, 82, 0.15);
+                    color: #74BA52;
+                }
+            }
+
+            &:hover {
+                background-color: #74BA52;
+
+                .item-title {
+                    i {
+                        background-color: rgba(252, 252, 254, 0.15);
+                        color: #fff;
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
